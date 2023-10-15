@@ -5,21 +5,21 @@
 class Wally < Formula
   desc "Randomly change wallpaper using Unsplash Source"
   homepage "https://github.com/ltpquang/wally"
-  version "0.1.1"
+  version "1.0.0"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ltpquang/wally/releases/download/v0.1.1/wally_0.1.1_macOS_arm64.tar.gz"
-      sha256 "5048514e8af6366753f3325dd9d2f42e16dfa2b93a15533dd0037471898aef8f"
+      url "https://github.com/ltpquang/wally/releases/download/v1.0.0/wally_1.0.0_macOS_arm64.tar.gz"
+      sha256 "182dea8f2f561e3c28dc91fa96b78381ab0fe86c0fb1d23b22fb45d1a99c0bdc"
 
       def install
         bin.install "wally"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ltpquang/wally/releases/download/v0.1.1/wally_0.1.1_macOS_x86_64.tar.gz"
-      sha256 "7f090ebea0b2a80c0c35d86ec89b21c25e915dcb7738d1240c17fb217f8cbc85"
+      url "https://github.com/ltpquang/wally/releases/download/v1.0.0/wally_1.0.0_macOS_x86_64.tar.gz"
+      sha256 "32153b025425e162cb4b8d88a7584a570dc7bb1b3fd0954d4671e2c59cc54247"
 
       def install
         bin.install "wally"
